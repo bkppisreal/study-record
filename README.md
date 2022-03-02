@@ -29,6 +29,6 @@ f，streaming在速度空间中进行
 2. 矩阵空间  
 m=Mf，通过这个式子，从速度空间转换到矩阵空间  
 M是转换矩阵，collision在矩阵空间中进行  
-m是相当于f的分布函数，meq是矩阵空间中的平衡态矩，S是对角矩阵  
+m是相当于f的分布函数，meq是矩阵空间中的平衡态矩，S是对角矩阵，S中有多个松弛时间，如果1/taoi=1/tao,MRT退化成LGBK  
 collision完成之后通过m=Mf反过去得到f  
 然后在速度空间中完成streaming的传递  
