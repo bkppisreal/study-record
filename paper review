@@ -1,0 +1,20 @@
+（一）forcing term  
+1. model  
+Shan-Chen model for multiphse and multicomponent  
+(1) 'Lattice Boltzmann model for simulating flows with multiple phases and components' and 'simulation of non-ideal gas and liquid-gas phase transitions by lattice'  
+① non-ideal gas equation of state and undergo a liquid-gas type phase transition  
+② momentum-conserving  
+③ density in builk liuqid and gas phase are obtained as functions of a temperature-like parameter  
+  density profile in the liuqid-gas interface is also obtained as function of the temperature-like parameter and is shown to be isotropic  
+  temperature-like parameter: parameter -(1-d0)/g formally plays teh same role in this LBE modelas the temperature in the van der Waals theory of phase transition  
+  but there is not an energy-conservation relation guaranteed by the kinetic equation and a well-defined temperature in this LBE model.   
+  Therefore, this LBE model does not necessarily correspond to an exact isothermal process. If we indeed choose fi to have the form of Eq.(31), the behavor of the LBE model will be consistent with that of an isothermal process  
+  and the parameter -(1-d0)/g can be used as a temperature scale  
+④ 基于之前提出的shan-chen模型的改进，之前的缺点是：动量不守恒、动量交换与实际流体不符  
+  现在的模型：show momentum conservation in a global sense while momentum is not conserved by the BGK collision operator at each site  
+之前：fi controls the detailed nature of the interaction potential and determine the equaition of state of the system
+      G control the strength and direction of the force, it can be either attractive or repulsive, in the case of one component system with nearest-neighbor interaction, green function is further reduced to a single number g
+后来：新加入long range force due to the potential acting on the particles at site x（表达式包含nearest neighbor interaction)  
+F 影响u,u的表达式是EOS推导的一部分，但为什么引入了非最近相互作用力之后的EOS和没有引入之前是一样的？好像有点不一样？因为之前的fi的变量是密度，现在变成了particle number (n)  
+if fi is properly chosen, this equation of state will exhibit many essential features of a liquid-gas phase transition; if g 趋近于0,这条式子就变成了ideal gas 的EOS  
+2.scheme  
