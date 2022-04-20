@@ -72,4 +72,17 @@ velocity[0] = 0.1;
 变量 j ：first-order velocity moment,一阶速度矩，大部分模型下，流体动量 j ＝ rho * u。
 变量 rhoBar ：这个可以自定义，默认情况下它被定义为 rhoBar=rho-1 ，用于提升计算精度。因为液体密度经常接近1，这样密度减去1的话，数值就是在0上下，表达双精度点的变量的字节也更有意义。
 
+4.20 
+论文Modeling condensation on structured surfaces using lattice Boltzmann method
+how to incorporate temperature dependence
+1. double distribution function  
+
+2. continum approach，直接解宏观thermal energy equation，在空间和时间离散化之后得到internal energy 的显式更新，并且把它当作主要参数，也就是说不用再理念国外引进独立的源项    
++ fluid satisfy van der waals equation of state
++ Peng-Robinson equation of state
+为什么不用Peng-Robinson equation of state？
+First, for solving the energy equation we use a conserved quantity formulation, with rho*e as the primary variable. Since the specific internal energy function for a van der Waals fluid is linear, this allows for direct computation of the heat flux from e and rho.即热流和主要参数之间存在线性关系比较好计算  
+
+Second, the condensation results presented in Section 4.3 have several assumptions that make the results qualitative when compared to water condensation. Specifically, 2D DWC condensation rates of a pure vapor at low density ratios will not exactly carry over to experiments that are inherently 3D at high density ratios. Consequently, van der Waals equation of state is sufficient for qualitatively capturing the essential behavior of a non-ideal fluid.纯蒸汽在低密度比下的二维DWC凝结率不会完全延续到高密度比下固有的三维实验中。因此，范德瓦尔斯状态方程足以定性地捕捉到非理想流体的基本行为。  
+
 
