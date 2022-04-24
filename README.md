@@ -85,4 +85,8 @@ First, for solving the energy equation we use a conserved quantity formulation, 
 
 Second, the condensation results presented in Section 4.3 have several assumptions that make the results qualitative when compared to water condensation. Specifically, 2D DWC condensation rates of a pure vapor at low density ratios will not exactly carry over to experiments that are inherently 3D at high density ratios. Consequently, van der Waals equation of state is sufficient for qualitatively capturing the essential behavior of a non-ideal fluid.纯蒸汽在低密度比下的二维DWC凝结率不会完全延续到高密度比下固有的三维实验中。因此，范德瓦尔斯状态方程足以定性地捕捉到非理想流体的基本行为。  
 
+4.24  
+speed of sound is c, which is different from the isothermal speed of sound cs  
+speed of sound is determined by EOS, 压力对密度在处entropy的偏导再开根号，代表actual speed of sound for a given pressure    
+
 
